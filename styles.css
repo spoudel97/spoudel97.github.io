@@ -23,64 +23,37 @@ body {
   align-items: flex-end;
 }
 
-.name {
-  font-size: 2rem;
-  margin: 0;
-}
-
-.meta {
-  color: #555555;
-  font-size: 0.95rem;
-}
+.name { font-size: 2rem; margin: 0; }
+.meta { color: #555; font-size: 0.95rem; }
 
 .links a {
   margin-right: 12px;
   color: #0066cc;
   text-decoration: none;
 }
-
-.links a:hover {
-  text-decoration: underline;
-}
+.links a:hover { text-decoration: underline; }
 
 /* Sections */
-.sec {
-  margin-top: 26px;
-}
-
+.sec { margin-top: 26px; }
 .sec h2 {
   font-size: 1rem;
-  letter-spacing: 0.02em;
+  letter-spacing: .02em;
   text-transform: uppercase;
-  color: #333333;
+  color: #333;
   margin: 0 0 10px;
 }
 
-/* Items (cards) */
+/* Items (cards) — white, no blue */
 .item {
   background: #ffffff;
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
   border-radius: 6px;
   padding: 16px;
   margin: 10px 0;
 }
 
-.role {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
+.role { display: flex; justify-content: space-between; flex-wrap: wrap; }
+.role h3 { margin: 0; font-size: 1rem; }
+.role .when { color: #555; font-size: 0.9rem; }
 
-.role h3 {
-  margin: 0;
-  font-size: 1rem;
-}
-
-.role .when {
-  color: #555555;
-  font-size: 0.9rem;
-}
-
-ul {
-  margin: 8px 0 0 18px;
-}
+ul { margin: 8px 0 0 18px; }
