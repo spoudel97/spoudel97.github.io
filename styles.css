@@ -1,64 +1,86 @@
-/* Base layout */
+/* ===== Base layout (white theme) ===== */
 body {
-  background: #ffffff;              /* White background */
+  background: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
-  color: #222222;                   /* Dark text */
+  color: #222222;
   margin: 0;
   padding: 0;
 }
 
-/* Container */
-.cv-wrap {
+/* Page containers */
+.container, .cv-wrap {
   max-width: 900px;
   margin: 0 auto;
-  padding: 32px;
+  padding: 32px 20px;
 }
 
-/* Header */
-.header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 12px;
-  align-items: flex-end;
-}
-
-.name { font-size: 2rem; margin: 0; }
+/* Headings and meta text */
+h1, h2, h3 { margin: 0 0 10px; }
 .meta { color: #555; font-size: 0.95rem; }
 
-.links a {
-  margin-right: 12px;
-  color: #0066cc;
-  text-decoration: none;
-}
-.links a:hover { text-decoration: underline; }
+/* Links */
+a { color: #0066cc; text-decoration: none; }
+a:hover { text-decoration: underline; }
 
-/* Sections */
-.sec { margin-top: 26px; }
-.sec h2 {
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  background: #1a73e8;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid #175fc2;
+}
+.btn:hover { filter: brightness(1.05); }
+
+/* Card (simple divider block) */
+.card, .item {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 12px 0;
+}
+
+/* Tag (skill chips) */
+.tags { display: flex; gap: 8px; flex-wrap: wrap; }
+.tag {
+  display: inline-block;
+  background: #f1f1f1;
+  border: 1px solid #e5e5e5;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: .9rem;
+  color: #333;
+}
+
+/* Hero layout (home page) */
+.hero { display: grid; grid-template-columns: 120px 1fr; gap: 16px; align-items: center; }
+.avatar {
+  width: 120px; height: 120px; object-fit: cover;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+}
+
+/* Section titles */
+.section { margin-top: 26px; }
+.section h2 {
   font-size: 1rem;
   letter-spacing: .02em;
   text-transform: uppercase;
-  color: #333333;
-  margin: 0 0 10px;
+  color: #333;
 }
 
-/* Item blocks */
-.item {
-  background: #f9f9f9;              /* Light gray cards */
-  border: 1px solid #dddddd;        /* Subtle divider */
-  border-radius: 6px;
-  padding: 16px;
-  margin: 10px 0;
-}
+/* Lists */
+ul { margin: 8px 0 0 18px; }
 
-.role {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+/* ===== CV-specific small bits (kept) ===== */
+.header {
+  display: flex; flex-wrap: wrap; justify-content: space-between;
+  gap: 12px; align-items: flex-end;
 }
-
+.role { display: flex; justify-content: space-between; flex-wrap: wrap; }
 .role h3 { margin: 0; font-size: 1rem; }
 .role .when { color: #555; font-size: 0.9rem; }
-
-ul { margin: 8px 0 0 18px; }
