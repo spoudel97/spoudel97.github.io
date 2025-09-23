@@ -1,1 +1,86 @@
-:root{--bg: gold !important;--card:#121a31;--text:#e8ecf1;--muted:#a7b2c8;--accent:#59b2ff}*{box-sizing:border-box}html,body{margin:0;padding:0;font-family:Arial-Helvetica-Sans-Serif !important,system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--text)}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}.container{max-width:900px;margin:0 auto;padding:40px 20px}.card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:28px;box-shadow:0 10px 30px rgba(0,0,0,.25)}h1{font-size:2.2rem;margin:0 0 8px 0}h2{font-size:1.2rem;color:var(--muted);font-weight:500;margin:0 0 20px 0}.section{margin-top:24px;display:grid;gap:12px}.tag{display:inline-block;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);padding:6px 10px;border-radius:999px;font-size:.9rem}.grid{display:grid;gap:16px}.grid-2{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}.footer{margin-top:26px;color:var(--muted);font-size:.9rem}.btn{display:inline-block;padding:10px 14px;background:linear-gradient(135deg,#2e7dff,#67e8f9);color:#0b1020;border-radius:10px;font-weight:600}hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin:18px 0}
+/* Base layout */
+body {
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222222;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.cv-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.name {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.meta {
+  color: #555555;
+  font-size: 0.95rem;
+}
+
+.links a {
+  margin-right: 12px;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+.sec {
+  margin-top: 26px;
+}
+
+.sec h2 {
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 0 0 10px;
+}
+
+/* Items (cards) */
+.item {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  padding: 16px;
+  margin: 10px 0;
+}
+
+.role {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.role h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.role .when {
+  color: #555555;
+  font-size: 0.9rem;
+}
+
+ul {
+  margin: 8px 0 0 18px;
+}
